@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://api.cerbos.dev/latest/cerbos/policy/v1/Policy.schema.json
+# docs: https://docs.cerbos.dev/cerbos/latest/policies/role_policies
+
+apiVersion: api.cerbos.dev/v1
+rolePolicy:
+  role: reader
+  parentRoles:
+    - user
+  rules:
+    - resource: thing
+      allowActions:
+        - thing:read
