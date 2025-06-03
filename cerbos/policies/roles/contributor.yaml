@@ -12,3 +12,6 @@ rolePolicy:
         - thing:read
         - thing:create
         - thing:update
+      condition:
+        match:
+          expr: R.attr.status == "active"
