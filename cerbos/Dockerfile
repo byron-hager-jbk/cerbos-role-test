@@ -1,6 +1,6 @@
 # NOTE: this is for deployment, don't worry about it for local development
 
-FROM ghcr.io/cerbos/cerbos:0.43.0
+FROM ghcr.io/cerbos/cerbos:0.56.0
 
 COPY policies /policies
 COPY config /config
